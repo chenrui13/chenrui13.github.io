@@ -1,0 +1,170 @@
+
+body{
+    display: flex;
+    background: linear-gradient(to top ,#021024,#052659,#5483b3,#7da0ca,#c1e8ff);
+    height: 955vh;
+    align-items: center;
+    justify-content: center;
+}
+.sjb{
+   position: relative;
+   width: 890px;
+   border-radius: 0 0 1em 1em;
+   box-shadow: 0 19px 38px rgba(3, 1, 10, 0.4),0 15px 12px rgba(7, 62, 83, 0.6);
+}
+.wjdc{
+   width: 700px;
+   height: 5500px;
+   border-radius: 15px;
+   background:linear-gradient(to right bottom,rgba(181, 221, 255, 0.7), rgba(214, 243, 255, 0.5),rgba(168, 245, 255, 0.4)) ;
+   /*毛玻璃*/
+   backdrop-filter: blur(10px);
+   box-shadow: 0 0 20px #052659;
+}
+.bt{
+   color: #031630;
+   letter-spacing: 5px;
+   text-align: center;
+   font: 900 40px '';
+   margin: 30px;
+}
+.box{
+   overflow: hidden;
+   position: relative;
+   top: 50px;
+}
+.box input {
+   width: 80%;
+   padding: 10px;
+   border: 0;
+   margin-left: 60px;
+   margin-bottom: 20px;
+   background-color: transparent;
+   border-bottom: 3px solid #021024;
+   outline: none;
+   font: 900 16px '';
+}
+.xb{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 100px;
+   left: 60px;
+   margin-bottom: 25px;
+   width: 80%;
+}
+.xb label{
+   display: flex;
+   /*变成小手手*/
+   cursor: pointer;
+}
+.xb label input{
+   /*隐藏前面原本的选择框*/
+   display: none;
+}
+.xb label input+span{
+   padding: 10px 25px;
+   margin-bottom: 10px;
+   font-size: 18px;
+   border-radius: 90px;
+   display: flex;
+   align-items: center;
+   transition: all 0.5s;
+   color: #052659;
+   font: 600 17px '';
+}
+.xb label input+span:hover{
+   background-color: #9ec8fc;
+}
+.xb label input:checked+span{
+   background-color: #5483b3;
+}
+.xb label input+span::before{
+   display: block;
+   content: "";
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   box-shadow:0 0 0 4px #052659 inset;
+   margin-right: 15px;
+   transition: all 0.5s;
+}
+.xb label input:checked+span::before{
+   box-shadow: 0 0 0 6px #052659 inset;
+}
+.xb p{
+   margin: 0 0 25px 0;
+   font:900 20px '';
+   color: #052659;
+   letter-spacing: 5px;
+}
+.xb select{
+   display: flex;
+   /*变成小手手*/
+   cursor: pointer;
+   width: 100%;
+   background-color: rgba(255,255,255,0);
+   color:#052659;
+   font-size: 18px ;
+   border-radius: 4px;
+   border-width: 7px;
+   text-align: center;
+   letter-spacing: 19px;
+   border-color: #052659;
+   font-weight: 600;
+   margin-top: 10px;
+}
+.xb select option{
+   border-radius: 4px;
+   font-weight: 600;
+   padding: 4px;
+}
+.xb select option:hover{
+   background-color: #0848a8;
+   border-radius: 4px;
+   transition: all 0.5s;
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+}
+.xb textarea{
+   border-color: #052659;
+   border-width: 7px;
+   font-size: 20px ;
+   border-radius: 4px;
+   padding: 10px;
+   height: 300px;
+   font-weight: 600;
+   color: #052659;
+   background-color: rgba(255,255,255,0);
+}
+.xb textarea:hover{
+   background-color: rgba(175, 239, 255, 0.5);
+}
+.dz{
+   /*从上到下排列*/
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 100px;
+   left: 130px;
+   width: 60%;
+}
+.dz button{
+   background-color: rgba(255,255,255,0);
+   border: none;
+   margin-bottom:-12px ;
+}
+.dz  p{
+   font: 900 20px '';
+   cursor: pointer;
+   border-width: 10px;
+   color: #fff;
+   padding: 10px 0 10px 20px;
+   letter-spacing: 20px;
+   background: linear-gradient(to left,#021024,#052659,#5483b3,#7da0ca,#c1e8ff);
+   border-radius: 4px;
+}
+.dz button p:hover{
+   color: #052659;
+}
